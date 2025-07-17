@@ -1,0 +1,426 @@
+@font-face {
+    font-family: nb;
+    src: url(test-newzald-book.woff2);
+}
+
+@font-face {
+    font-family: nblk;
+    src: url(test-newzald-black.woff2);
+}
+
+@font-face {
+    font-family: n2blk;
+    src: url(test-national-2-extrabold.woff2);
+}
+
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            text-decoration: none;
+            
+        }
+
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+b, h4, h3, h2, h1 {
+    font-family: "n2blk", Georgia, 'Times New Roman', Times, serif;
+}
+
+a, p, div {
+    font-family: "nb", Georgia, 'Times New Roman', Times, serif;
+}
+
+body {
+    width: 100vw-15px;
+    height:initial;
+    border: #8B3535 7.5px solid;;
+}
+
+div .top-bar {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100px;
+    width: 100vw-15px;
+    background-color: #131313;
+    overflow: hidden;
+}
+
+div .top-bar:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+div#top-bar-logo {
+    position: relative;
+    height: 100px;
+    width: 500px
+}
+
+#top-bar-logo img#en_logo {
+    position: absolute;
+    height: 270%;
+    rotate: 5deg;
+    z-index: 3;
+    top: 1rem;
+}
+
+#cn_logo {
+    position: absolute;
+    height: 90%!important;
+    top: 0.6rem;
+    left: 6.5rem;
+    rotate: 1deg!important;
+    z-index: 4;
+
+}
+
+#live-date {
+    display: inline;
+    z-index: 999;
+    color: #FFF;
+    font-family: "nblk", Georgia, 'Times New Roman', Times, serif;
+}
+
+header {
+    display: inline;
+    color: #FFF;
+    font-family: "nb", Georgia, 'Times New Roman', Times, serif;
+}
+
+header p {
+    display: inline;
+}
+
+#top-bar-text {
+    z-index: 999;
+    position: absolute;
+    right: 2rem;
+    opacity: 0.5;
+    animation: opacity-dim 200ms
+}
+
+@keyframes opacity-change {
+    from { opacity: 0.5 } to {opacity: 1}
+}
+
+@keyframes opacity-dim {
+    from { opacity: 1 } to {opacity: 0.5}
+}
+
+#top-bar-text:hover {
+    opacity: 1;
+    animation: opacity-change 200ms
+    
+}
+
+#top-bar-text p {
+    position: relative;
+    justify-content: space-between;
+    align-items: right;
+}
+
+#top-bar-links {
+    position: relative;
+    font-size: 16px;
+    transform: translateX(-50%);
+    z-index: 999;
+}
+
+#tbl-container {
+    display: flex;
+    gap: 2rem;
+}
+
+#tbl-container li {
+    list-style: none;
+            
+            justify-content: center;
+            flex-wrap: wrap;
+}
+
+div#slogan-flyer {
+    background: #742828;
+    width: 100vw-15px;
+    color: #fff;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    line-height: 1rem;
+    justify-content: center;
+    gap: 8px;
+    align-items: center;
+}
+
+#social{
+    position: absolute;
+
+}
+
+#social a, p, b{
+    text-decoration: none!important;
+    color: #FFF;
+
+}
+
+
+
+        /* Navigation */
+        .nav {
+            background: #f8f8f8;
+            border-bottom: 1px solid #ddd;
+            padding: 15px 0;
+            font-family: "n2blk", Georgia, 'Times New Roman', Times, serif;
+        }
+
+        .nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .nav li {
+            margin: 0 25px;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: #333;
+            font-size: 16px;
+            font-weight: 800;
+            transition: color 0.3s;
+        }
+
+        .nav a:hover {
+            color: #007acc;
+        }
+
+        /* Main Content */
+        .main-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 40px;
+            padding: 40px 0;
+        }
+
+        .news-section {
+            border-right: 1px solid #ddd;
+            padding-right: 40px;
+        }
+
+        .featured-article {
+            margin-bottom: 40px;
+            padding-bottom: 30px;
+            border-bottom: 2px solid #eee;
+        }
+
+        .featured-article h2 {
+            font-size: 2.2em;
+            margin-bottom: 15px;
+            line-height: 1.2;
+            color: #1a1a1a;
+        }
+
+        .featured-article .byline {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 15px;
+        }
+
+        .featured-article p {
+            font-size: 1.1em;
+            margin-bottom: 15px;
+            color: #444;
+        }
+
+        .article-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .article-card {
+            padding-bottom: 20px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .article-card h3 {
+            font-size: 1.3em;
+            margin-bottom: 10px;
+            line-height: 1.3;
+        }
+
+        .article-card .byline {
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 10px;
+        }
+
+        .article-card p {
+            color: #555;
+            font-size: 0.95em;
+        }
+
+        /* Sidebar */
+        .sidebar {
+            padding-left: 40px;
+        }
+
+        .sidebar-section {
+            margin-bottom: 40px;
+        }
+
+        .sidebar-section h3 {
+            font-size: 1.3em;
+            margin-bottom: 20px;
+            color: #1a1a1a;
+            border-bottom: 2px solid #007acc;
+            padding-bottom: 10px;
+        }
+
+        .sidebar-list li {
+            list-style: none;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .sidebar-list li:last-child {
+            border-bottom: none;
+        }
+
+        .sidebar-list a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 500;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .sidebar-list a:hover {
+            color: #007acc;
+        }
+
+        .sidebar-list .date {
+            color: #666;
+            font-size: 13px;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1a1a1a;
+            background-image: url(eArtboard\ 1@2x.png);
+            background-position: 300px;
+            background-repeat: no-repeat;
+            color: #ccc;
+            padding: 40px 50px;
+            text-align: center;
+            width: 100vw-15px;
+        }
+
+        .footer-content {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 30px;
+            padding: 30px;
+            flex-wrap: wrap;
+            text-align: left;
+        }
+
+        .footer-section h4 {
+            color: #fff;
+            margin-bottom: 15px;
+        }
+
+        .footer-section a {
+            color: #fff;
+            text-decoration: none;
+            display: block;
+            margin-bottom: 8px;
+            animation: opacity-dim 200ms;
+            opacity: 0.5;
+        }
+            
+
+        .footer-section a:hover {
+            color: #fff;
+            animation: opacity-change 200ms;
+            opacity: 1;
+        }
+
+        .footer-section {
+            max-width: 200px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+            color: #999;
+            text-align: left;
+            width: 100vw-15px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .news-section {
+                border-right: none;
+                padding-right: 0;
+            }
+            
+            .sidebar {
+                padding-left: 0;
+            }
+            
+            .article-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .masthead h1 {
+                font-size: 2.5em;
+            }
+            
+            .nav ul {
+                justify-content: flex-start;
+            }
+            
+            .nav li {
+                margin: 5px 15px;
+            }
+        }
+
+#shsid {
+    font-family: "n2blk", Georgia, 'Times New Roman', Times, serif;
+    display: inline;
+    animation: none;
+    opacity: 1;
+    text-decoration:underline 2px yellow;
+}
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            #top-bar-text {
+                display: none;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            #top-bar-links {
+                display: none;
+            }
+        }

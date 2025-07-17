@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>SHSID|Times | The Stallions Magazine, by the Season</title>
+    <script src="https://kit.fontawesome.com/7308cf0505.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="image/x-icon" href="shsidtimes.ico">
+    <meta property="og:url" content="https://shsidtimes.org">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="SHSID|Times — The Stallions Magazine by the Season">
+    <meta property="og:title" content="SHSID|Times — The Stallions Magazine by the Season">
+    <meta property="og:description" content="SHSID|Times — The Stallions Magazine by the Season">
+    <meta property="og:image" content="">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="top-bar">
+                <div class="logo" id="top-bar-logo">
+                    <a href="#"><img src="eArtboard 1@2x.png" alt="" id="en_logo"></a>
+                    <a href="#"><img src="ehArtboard 1@2x.png" alt="" id="cn_logo"></a>
+                    
+                </div>
+                <div id="top-bar-links">
+                        <div id="tbl-container">
+                            <li><a href="#"><b>Latest Paper <br> 最新期刊</b></a></li>
+                            <li><a href="#"><p>Archives <br>时报档案</p></a></li>
+                            <li><a href="#"><p>About <br> 关于时报</p></a></li>
+                            <li><a href="#"><p>Masthead <br> 报编报头</p></a></li>
+                        </div>
+                        
+                    </div>
+                <div id="top-bar-text">
+                    <p>
+                        <div class="date" >
+                        <p id="live-date">Loading...</p>
+                        <script>
+                            function updateLiveDate() {
+                                const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                                const months = ['January', 'February', 'March', 'April', 'May', 'June', 
+                                            'July', 'August', 'September', 'October', 'November', 'December'];
+                                
+                                const date = new Date();
+                                const timezoneOffset = date.getTimezoneOffset()
+                                let cstOffset = 480
+
+                                let adjTime = new Date(date.getTime() + (cstOffset + timezoneOffset) * 60 * 1000)
+
+                                const formattedDate = `${days[adjTime.getDay()]}, ${months[adjTime.getMonth()]} ${adjTime.getDate()}, ${adjTime.getFullYear()}`;
+                                
+                                document.getElementById('live-date').textContent = formattedDate;
+                            }
+
+                            // Update immediately and every minute
+                            updateLiveDate();
+                            setInterval(updateLiveDate, 60000); // Update every minute
+                    </script>
+                    </div> 
+                    </p>
+                    <p>Xuhui, Shanghai, CN </p>
+                </div>
+            </div>
+        </div>
+        <!-- <div id="slogan-flyer">
+            <a href="about"><b>Persistent, Aspiring, Noble, Diligent, Achieving</b></a>
+            
+            <p>·</p>
+            <a href="recruiting"><p>2026 SHSID|Times Application</p></a>
+        </div> -->
+    </header>
+    
+
+
+    </div>
+    <nav class="nav">
+        <div class="container">
+            <ul>
+                <li><a href="#">Cover Stories</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">English Literature</a></li>
+                <li><a href="#">汉语文学</a></li>
+                <li><a href="#">Lifestyle</a></li>
+                <li><a href="#">Student Journal</a></li>
+                <li><a href="#">Sci-Tech</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="main-content">
+            <section class="news-section">
+                <article class="featured-article">
+                    <h2>COLORS
+of SHSID:
+Club Showcase</h2>
+                    <div class="byline">Cover Story • Reported by Aaron Xue • Included in March-April 2025</div>
+                    <p>As spring awakens, SHSID’s
+truest colors come to life, revealing our
+school as a diverse and unique garden
+in full bloom. One way to get a glimpse
+into the dazzling world of student
+life is to explore the vibrant mosaic
+pieced together by our clubs, where our
+diversity and creativity shine brightest.
+From anime to dance, and from racing
+to math modeling, our students have
+it all. Beyond the classroom, we each
+have burning passions that drive us—
+whether in science, the arts, speech-
+making, or beyond.</p>
+                </article>
+
+                <div class="article-grid">
+                    <article class="article-card">
+                        <h3>Student Government Passes Climate Resolution</h3>
+                        <div class="byline">By Michael Chen • July 14, 2025</div>
+                        <p>The resolution calls for carbon neutrality by 2030 and establishes a new sustainability committee to oversee environmental initiatives across campus.</p>
+                    </article>
+
+                    <article class="article-card">
+                        <h3>New Library Wing Opens to Students</h3>
+                        <div class="byline">By Emma Rodriguez • July 13, 2025</div>
+                        <p>The state-of-the-art facility features collaborative study spaces, advanced technology labs, and a 24/7 study area for students.</p>
+                    </article>
+
+                    <article class="article-card">
+                        <h3>Summer Research Symposium Highlights</h3>
+                        <div class="byline">By David Park • July 12, 2025</div>
+                        <p>Over 200 students presented their research findings at the annual symposium, showcasing work across science, humanities, and social sciences.</p>
+                    </article>
+
+                    <article class="article-card">
+                        <h3>Campus Food Services Introduces New Options</h3>
+                        <div class="byline">By Lisa Wang • July 11, 2025</div>
+                        <p>Plant-based meals and international cuisine options are now available in all dining halls, responding to student feedback and dietary preferences.</p>
+                    </article>
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>Recent Headlines</h3>
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">Alumni Network Expands Mentorship Program</a>
+                            <div class="date">July 10, 2025</div>
+                        </li>
+                        <li>
+                            <a href="#">Campus Safety Introduces New Alert System</a>
+                            <div class="date">July 9, 2025</div>
+                        </li>
+                        <li>
+                            <a href="#">Art Gallery Features Student Exhibitions</a>
+                            <div class="date">July 8, 2025</div>
+                        </li>
+                        <li>
+                            <a href="#">International Exchange Program Expands</a>
+                            <div class="date">July 7, 2025</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Upcoming Events</h3>
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">Career Fair 2025</a>
+                            <div class="date">July 20, 2025</div>
+                        </li>
+                        <li>
+                            <a href="#">Summer Concert Series</a>
+                            <div class="date">July 25, 2025</div>
+                        </li>
+                        <li>
+                            <a href="#">Orientation Week Activities</a>
+                            <div class="date">August 1, 2025</div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <a href="#">Our Past,  <br> Present, and Future</a>
+                    <a href="#">Masthead</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Archives</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Latest Paper <br> <p>March-April 2025</p></h4>
+                    
+                    <a href="#">Articles</a>
+                    <a href="#">Art and Photography</a>
+                    <a href="#">Front Materials</a>
+                    <a href="#">Corrections</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="#">Finding Copies <br> on Campus</a>
+                    <a href="#">Writing for <br> the Times<a>
+                    <a href="#">Submitting <br> Front Materials</a>
+                    <a href="#">Send a Letter <br> to the Editor</a>
+                </div>
+                <div class="footer-section">
+                    <h4>SHSID|Times is the official High School student-run publication of <a href="#" id="shsid"><span>Shanghai High School International Division.</span></a></h4>
+                    <a href="#">About SHSID</a>
+                    <a href="#">Applying to SHSID<a>
+                    <a href="#">Life at SHSID</a>
+                    <a href="#">G1-12 News Feed</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025, The Supervisors and Editors of The SHSID|Times. </p>
+                
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
