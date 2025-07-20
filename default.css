@@ -460,6 +460,7 @@ nav li {
                 display: none;
             } main img {
                 width: 100vw-30px;
+                overflow-x: hidden;
             }
         }
 
