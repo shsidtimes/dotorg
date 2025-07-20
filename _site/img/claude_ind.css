@@ -1,186 +1,96 @@
 @font-face {
-    font-family: nb;
-    src: url(../img/test-newzald-book.woff2);
+    font-family: 'Modern No. 20';
+    src: url(MOD20.woff) format('woff');
 }
 
-@font-face {
-    font-family: nblk;
-    src: url(../img/test-newzald-black.woff2);
-}
-
-@font-face {
-    font-family: n2blk;
-    src: url(../img/test-national-2-extrabold.woff2);
-}
-
-* {
+        * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
-            text-decoration: none;
-            
         }
 
-        main {
+        body {
+            border: #8B3535 2rem solid;
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+
+        .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
 
-b, h4, h3, h2, h1 {
-    font-family: "n2blk", Georgia, 'Times New Roman', Times, serif;
-}
+        /* Header */
+        .header {
+            background: #1a1a1a;
+            color: white;
+            padding: 10px 0;
+        }
 
-a, p, div {
-    font-family: "nb", Georgia, 'Times New Roman', Times, serif;
-}
+        .top-bar {
+            position: absolute;
+            display: flex;
+            align-items: center;
+            font-size: 14px;
+            height: 1.5rem;
+        }
 
-body {
-    width: 100vw-15px;
-    height:initial;
-    border: #8B3535 7.5px solid;;
-}
+        .date {
+            color: #ccc;
+        }
 
-div .top-bar {
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 100px;
-    width: 100vw-15px;
-    background-color: #131313;
-    overflow: hidden;
-}
+        #live-date {
+            left: 0;
+            position: absolute;
+            margin: 0 10px;
+        }
 
-div .top-bar:after {
-    content: "";
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
+        .social-links a {
+            color: #ccc;
+            text-decoration: none;
+            margin: 0 10px;
+            transition: color 0.3s;
+        }
 
-div#top-bar-logo {
-    position: relative;
-    height: 100px;
-    width: 500px
-}
+        .social-links {
+            right: 0;
+            position: absolute;
+        }
 
-#top-bar-logo img#en_logo {
-    position: absolute;
-    height: 270%;
-    rotate: 5deg;
-    z-index: 3;
-    top: 1rem;
-}
+        .social-links a:hover {
+            color: #fff;
+        }
 
-#cn_logo {
-    position: absolute;
-    height: 90%!important;
-    top: 0.6rem;
-    left: 6.5rem;
-    rotate: 1deg!important;
-    z-index: 4;
+        .masthead {
+            text-align: center;
+            padding: 30px 0;
+            background: #fff;
+            color: #1a1a1a;
+            border-bottom: 3px solid #1a1a1a;
+        }
 
-}
+        .masthead h1 {
+            font-family: "Modern No. 20", Georgia, 'Times New Roman', Times, serif;
+            font-size: 3.5em;
+            font-weight: normal;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
 
-#live-date {
-    display: inline;
-    z-index: 999;
-    color: #FFF;
-    font-family: "nblk", Georgia, 'Times New Roman', Times, serif;
-}
-
-header {
-    display: inline;
-    color: #FFF;
-    font-family: "nb", Georgia, 'Times New Roman', Times, serif;
-}
-
-header p {
-    display: inline;
-}
-
-#top-bar-text {
-    z-index: 999;
-    position: absolute;
-    right: 2rem;
-    opacity: 0.5;
-    animation: opacity-dim 200ms
-}
-
-@keyframes opacity-change {
-    from { opacity: 0.5 } to {opacity: 1}
-}
-
-@keyframes opacity-dim {
-    from { opacity: 1 } to {opacity: 0.5}
-}
-
-#top-bar-text:hover {
-    opacity: 1;
-    animation: opacity-change 200ms
-    
-}
-
-#top-bar-text p {
-    position: relative;
-    justify-content: space-between;
-    align-items: right;
-}
-
-#top-bar-links {
-    position: relative;
-    font-size: 16px;
-    transform: translateX(-50%);
-    z-index: 999;
-}
-
-#tbl-container {
-    display: flex;
-    gap: 2rem;
-}
-
-#tbl-container li {
-    list-style: none;
-            
-            justify-content: center;
-            flex-wrap: wrap;
-}
-
-div#slogan-flyer {
-    background: #742828;
-    width: 100vw-15px;
-    color: #fff;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 10px;
-    line-height: 1rem;
-    justify-content: center;
-    gap: 8px;
-    align-items: center;
-}
-
-#social{
-    position: absolute;
-
-}
-
-#social a, p, b{
-    text-decoration: none!important;
-    color: #FFF;
-
-}
-
-
+        .masthead .tagline {
+            font-size: 1.1em;
+            color: #666;
+            font-style: italic;
+        }
 
         /* Navigation */
         .nav {
             background: #f8f8f8;
             border-bottom: 1px solid #ddd;
             padding: 15px 0;
-            font-family: "n2blk", Georgia, 'Times New Roman', Times, serif;
         }
 
         .nav ul {
@@ -197,8 +107,10 @@ div#slogan-flyer {
         .nav a {
             text-decoration: none;
             color: #333;
-            font-size: 16px;
-            font-weight: 800;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-size: 14px;
+            letter-spacing: 1px;
             transition: color 0.3s;
         }
 
@@ -321,22 +233,16 @@ div#slogan-flyer {
         /* Footer */
         .footer {
             background: #1a1a1a;
-            background-image: url(../img/eArtboard\ 1@2x.png);
-            background-position: 300px;
-            background-repeat: no-repeat;
             color: #ccc;
-            padding: 40px 50px;
+            padding: 40px 0;
             text-align: center;
-            width: 100vw-15px;
         }
 
         .footer-content {
-            display: flex;
-            gap: 40px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
             margin-bottom: 30px;
-            padding: 30px;
-            flex-wrap: wrap;
-            text-align: left;
         }
 
         .footer-section h4 {
@@ -345,31 +251,20 @@ div#slogan-flyer {
         }
 
         .footer-section a {
-            color: #fff;
+            color: #ccc;
             text-decoration: none;
             display: block;
             margin-bottom: 8px;
-            animation: opacity-dim 200ms;
-            opacity: 0.5;
         }
-            
 
         .footer-section a:hover {
             color: #fff;
-            animation: opacity-change 200ms;
-            opacity: 1;
-        }
-
-        .footer-section {
-            max-width: 200px;
         }
 
         .footer-bottom {
             border-top: 1px solid #333;
             padding-top: 20px;
             color: #999;
-            text-align: left;
-            width: 100vw-15px;
         }
 
         /* Responsive */
@@ -401,26 +296,5 @@ div#slogan-flyer {
             
             .nav li {
                 margin: 5px 15px;
-            }
-        }
-
-#shsid {
-    font-family: "n2blk", Georgia, 'Times New Roman', Times, serif;
-    display: inline;
-    animation: none;
-    opacity: 1;
-    text-decoration:underline 2px yellow;
-}
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            #top-bar-text {
-                display: none;
-            }
-        }
-
-        @media (max-width: 1000px) {
-            #top-bar-links {
-                display: none;
             }
         }

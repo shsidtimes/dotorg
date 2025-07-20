@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Chronicle - News & Updates</title>
+    <link rel="stylesheet" href="claude_ind.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="top-bar">
+                <div class="date" id="live-date">Loading...</div>
+
+                    <script>
+                    function updateLiveDate() {
+                        const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+                        const months = ['January', 'February', 'March', 'April', 'May', 'June', 
+                                    'July', 'August', 'September', 'October', 'November', 'December'];
+                        
+                        const now = new Date();
+                        const formattedDate = `${days[now.getDay()]}, ${months[now.getMonth()]} ${now.getDate()}, ${now.getFullYear()}`;
+                        
+                        document.getElementById('live-date').textContent = formattedDate;
+                    }
+
+                    // Update immediately and every minute
+                    updateLiveDate();
+                    setInterval(updateLiveDate, 60000); // Update every minute
+                    </script>
+
+                <div class="social-links">
+                    <a href="#">Facebook</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">Instagram</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="masthead">
+        <div class="container">
+            <h1>SHSID|TIMES</h1>
+            <p class="tagline">Independent Student News Since 1878</p>
+        </div>
+    </div>
+
+    <nav class="nav">
+        <div class="container">
+            <ul>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Commentary</a></li>
+                <li><a href="#">Arts</a></li>
+                <li><a href="#">Sports</a></li>
+                <li><a href="#">Features</a></li>
+                <li><a href="#">Multimedia</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <div class="main-content">
+            <section class="news-section">
+                <article class="featured-article">
+                    <h2>Campus Innovation Initiative Receives Major Funding</h2>
+                    <div class="byline">By Sarah Johnson • July 15, 2025</div>
+                    <p>The university has announced a groundbreaking $2.3 million grant to support innovative student projects and research initiatives across all departments. This funding represents the largest single investment in student-led innovation in the institution's history.</p>
+                    <p>The initiative will support up to 15 different projects over the next academic year, with a focus on sustainable technology, social impact, and interdisciplinary collaboration. Applications are now open for all enrolled students.</p>
+                </article>
+
+                <div class="article-grid">
+                    <article class="article-card">
+                        <h3>Student Government Passes Climate Resolution</h3>
+                        <div class="byline">By Michael Chen • July 14, 2025</div>
+                        <p>The resolution calls for carbon neutrality by 2030 and establishes a new sustainability committee to oversee environmental initiatives across campus.</p>
+                    </article>
+
+                    <article class="article-card">
+                        <h3>New Library Wing Opens to Students</h3>
+                        <div class="byline">By Emma Rodriguez • July 13, 2025</div>
+                        <p>The state-of-the-art facility features collaborative study spaces, advanced technology labs, and a 24/7 study area for students.</p>
+                    </article>
+
+                    <article class="article-card">
+                        <h3>Summer Research Symposium Highlights</h3>
+                        <div class="byline">By David Park • July 12, 2025</div>
+                        <p>Over 200 students presented their research findings at the annual symposium, showcasing work across science, humanities, and social sciences.</p>
+                    </article>
+
+                    <article class="article-card">
+                        <h3>Campus Food Services Introduces New Options</h3>
+                        <div class="byline">By Lisa Wang • July 11, 2025</div>
+                        <p>Plant-based meals and international cuisine options are now available in all dining halls, responding to student feedback and dietary preferences.</p>
+                    </article>
+                </div>
+            </section>
+
+            <aside class="sidebar">
+                <div class="sidebar-section">
+                    <h3>Recent Headlines</h3>
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">Alumni Network Expands Mentorship Program</a>
+                            <div class="date">July 10, 2025</div>
+                        </li>
+                        <li>
+                            <a href="#">Campus Safety Introduces New Alert System</a>
+                            <div class="date">July 9, 2025</div>
+                        </li>
+                        <li>
+                            <a href="#">Art Gallery Features Student Exhibitions</a>
+                            <div class="date">July 8, 2025</div>
+                        </li>
+                        <li>
+                            <a href="#">International Exchange Program Expands</a>
+                            <div class="date">July 7, 2025</div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="sidebar-section">
+                    <h3>Upcoming Events</h3>
+                    <ul class="sidebar-list">
+                        <li>
+                            <a href="#">Career Fair 2025</a>
+                            <div class="date">July 20, 2025</div>
+                        </li>
+                        <li>
+                            <a href="#">Summer Concert Series</a>
+                            <div class="date">July 25, 2025</div>
+                        </li>
+                        <li>
+                            <a href="#">Orientation Week Activities</a>
+                            <div class="date">August 1, 2025</div>
+                        </li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <a href="#">Our Mission</a>
+                    <a href="#">Staff</a>
+                    <a href="#">Contact</a>
+                    <a href="#">Archives</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Sections</h4>
+                    <a href="#">News</a>
+                    <a href="#">Commentary</a>
+                    <a href="#">Arts & Culture</a>
+                    <a href="#">Sports</a>
+                </div>
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <a href="#">Subscribe</a>
+                    <a href="#">Newsletter</a>
+                    <a href="#">Social Media</a>
+                    <a href="#">RSS Feed</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 The Chronicle. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

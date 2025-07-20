@@ -27,11 +27,19 @@
             padding: 0 20px;
         }
 
+        main.main-content p {
+            color: #000!important;
+        }
+
 b, h4, h3, h2, h1 {
     font-family: "n2blk", Georgia, 'Times New Roman', Times, serif;
 }
 
-a, p, div {
+h1 {
+    font-size: 3rem;
+}
+
+a, p, div, i {
     font-family: "nb", Georgia, 'Times New Roman', Times, serif;
 }
 
@@ -102,6 +110,10 @@ header p {
     display: inline;
 }
 
+header * {
+    color: #FFF!important;
+}
+
 #top-bar-text {
     z-index: 999;
     position: absolute;
@@ -164,13 +176,20 @@ div#slogan-flyer {
 
 #social{
     position: absolute;
+}
+
+nav p {
+    color: #000!important;
 
 }
 
-#social a, p, b{
-    text-decoration: none!important;
-    color: #FFF;
 
+body :not(main):not(main *) a:visited {
+    text-decoration: none!important;
+}
+
+nav li {
+    color: #000!important;
 }
 
 
@@ -207,11 +226,30 @@ div#slogan-flyer {
         }
 
         /* Main Content */
-        .main-content {
-            display: grid;
-            grid-template-columns: 2fr 1fr;
-            gap: 40px;
+        main {
             padding: 40px 0;
+            max-width: 600px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        main p, i {
+            font-size: 20px;
+            padding: 1rem 0.5rem;
+        }
+
+        #byline p, i, h4 {
+            display: inline-block;
+            padding: 0;margin: 0;;
+        }
+
+        #byline h4 {
+            font-size: 18px;
+        }
+        
+        main img {
+            max-width: 600px;
+            align-items: center;
         }
 
         .news-section {

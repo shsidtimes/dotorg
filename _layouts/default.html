@@ -1,12 +1,16 @@
+---
+layout: default
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../../../index.css">
     <title>SHSID|Times | The Stallions Magazine, by the Season</title>
     <script src="https://kit.fontawesome.com/7308cf0505.js" crossorigin="anonymous"></script>
-    <link rel="icon" type="image/x-icon" href="../img/shsidtimes.ico">
+    <link rel="icon" type="image/x-icon" href="../../../img/shsidtimes.ico">
     <meta property="og:url" content="https://shsidtimes.org">
     <meta property="og:type" content="website">
     <meta property="og:site_name" content="SHSID|Times — The Stallions Magazine by the Season">
@@ -19,8 +23,8 @@
         <div class="container">
             <div class="top-bar">
                 <div class="logo" id="top-bar-logo">
-                    <a href="#"><img src="../img/eArtboard 1@2x.png" alt="" id="en_logo"></a>
-                    <a href="#"><img src="../img/ehArtboard 1@2x.png" alt="" id="cn_logo"></a>
+                    <a href="#"><img src="../../../img/eArtboard 1@2x.png" alt="" id="en_logo"></a>
+                    <a href="#"><img src="../../../img/ehArtboard 1@2x.png" alt="" id="cn_logo"></a>
                     
                 </div>
                 <div id="top-bar-links">
@@ -63,12 +67,12 @@
                 </div>
             </div>
         </div>
-        <!-- <div id="slogan-flyer">
+        <div id="slogan-flyer">
             <a href="about"><b>Persistent, Aspiring, Noble, Diligent, Achieving</b></a>
             
             <p>·</p>
             <a href="recruiting"><p>2026 SHSID|Times Application</p></a>
-        </div> -->
+        </div>
     </header>
     
 
@@ -89,99 +93,12 @@
     </nav>
 
     <main class="container">
-        <div class="main-content">
-            <section class="news-section">
-                <article class="featured-article">
-    <h3><a href="{{ default.url }}">{{ default.title }}</a></h3>
-                    <h2 href="">COLORS
-of SHSID:
-Club Showcase</h2>
-                    <div class="byline">Cover Story • Reported by Aaron Xue • Included in March-April 2025</div>
-                    <p>As spring awakens, SHSID’s
-truest colors come to life, revealing our
-school as a diverse and unique garden
-in full bloom. One way to get a glimpse
-into the dazzling world of student
-life is to explore the vibrant mosaic
-pieced together by our clubs, where our
-diversity and creativity shine brightest.
-From anime to dance, and from racing
-to math modeling, our students have
-it all. Beyond the classroom, we each
-have burning passions that drive us—
-whether in science, the arts, speech-
-making, or beyond.</p>
-                </article>
-
-                <div class="article-grid">
-                    <article class="article-card">
-                        <h3>Student Government Passes Climate Resolution</h3>
-                        <div class="byline">By Michael Chen • July 14, 2025</div>
-                        <p>The resolution calls for carbon neutrality by 2030 and establishes a new sustainability committee to oversee environmental initiatives across campus.</p>
-                    </article>
-
-                    <article class="article-card">
-                        <h3>New Library Wing Opens to Students</h3>
-                        <div class="byline">By Emma Rodriguez • July 13, 2025</div>
-                        <p>The state-of-the-art facility features collaborative study spaces, advanced technology labs, and a 24/7 study area for students.</p>
-                    </article>
-
-                    <article class="article-card">
-                        <h3>Summer Research Symposium Highlights</h3>
-                        <div class="byline">By David Park • July 12, 2025</div>
-                        <p>Over 200 students presented their research findings at the annual symposium, showcasing work across science, humanities, and social sciences.</p>
-                    </article>
-
-                    <article class="article-card">
-                        <h3>Campus Food Services Introduces New Options</h3>
-                        <div class="byline">By Lisa Wang • July 11, 2025</div>
-                        <p>Plant-based meals and international cuisine options are now available in all dining halls, responding to student feedback and dietary preferences.</p>
-                    </article>
-                </div>
-            </section>
-
-            <aside class="sidebar">
-                <div class="sidebar-section">
-                    <h3>Recent Headlines</h3>
-                    <ul class="sidebar-list">
-                        <li>
-                            <a href="#">Alumni Network Expands Mentorship Program</a>
-                            <div class="date">July 10, 2025</div>
-                        </li>
-                        <li>
-                            <a href="#">Campus Safety Introduces New Alert System</a>
-                            <div class="date">July 9, 2025</div>
-                        </li>
-                        <li>
-                            <a href="#">Art Gallery Features Student Exhibitions</a>
-                            <div class="date">July 8, 2025</div>
-                        </li>
-                        <li>
-                            <a href="#">International Exchange Program Expands</a>
-                            <div class="date">July 7, 2025</div>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="sidebar-section">
-                    <h3>Upcoming Events</h3>
-                    <ul class="sidebar-list">
-                        <li>
-                            <a href="#">Career Fair 2025</a>
-                            <div class="date">July 20, 2025</div>
-                        </li>
-                        <li>
-                            <a href="#">Summer Concert Series</a>
-                            <div class="date">July 25, 2025</div>
-                        </li>
-                        <li>
-                            <a href="#">Orientation Week Activities</a>
-                            <div class="date">August 1, 2025</div>
-                        </li>
-                    </ul>
-                </div>
-            </aside>
+        <div id="byline">
+            <h1>{{page.title}}</h1>
+        <i>{{page.tagline}}</i> &nbsp; <p>By</p> <h4>{{page.author}}</h4>
         </div>
+        
+        {{ content }}
     </main>
 
     <footer class="footer">
