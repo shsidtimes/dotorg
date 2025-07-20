@@ -458,7 +458,9 @@ nav li {
         @media (max-width: 768px) {
             #top-bar-text {
                 display: none;
-            }
+            } main img {
+                width: 100vw-30px;
+                overflow-x: hidden;
         }
 
         @media (max-width: 1000px) {
