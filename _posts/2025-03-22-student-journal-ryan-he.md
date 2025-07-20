@@ -6,7 +6,7 @@ note: "Included in the Summer 2025 Issue"
 tagline: "For people who took the Physics Bowl"
 ---
 
-![We'll be let out of our little houses of cultural expectations and empty insides when we break our clocks.](../../../../assets/images/breaking-both.png)
+
 
 
 When the light stiffens on the rusted guardrails, as I rush inside the door frame back home, the clock runs above my parents, whose mouths are running at lightning speed, in a conversation that goes a little bit like this: The majority of us are going to live the same life. We're going to get the same internships at the same consulting firms, work the same jobs that make us money, get married, have children, find retirement plans, then retire and yada yada. They then glance at me, brimming with excitement about this comfortable life. This kind of life is comfortable, a testament to a million comfortable people that lives in a million cities, living a million lives, a million comfortable people. But when you write it out in plain text, it seems scary, right? At least, to me, who's writing it out in plain text for you, it sure is. I'm afraid that the adults are right.
