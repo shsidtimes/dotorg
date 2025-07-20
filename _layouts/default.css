@@ -21,10 +21,6 @@
             
         }
 
-        body {
-            overflow-x: hidden;
-        }
-
         main {
             max-width: 1200px;
             margin: 0 auto;
@@ -51,6 +47,7 @@ body {
     width: 100vw-15px;
     height:initial;
     border: #8B3535 7.5px solid;;
+    overflow-x: hidden;
 }
 
 div .top-bar {
