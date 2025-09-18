@@ -22,7 +22,6 @@
         }
 
         main {
-            max-width: 1200px;
             margin: 0 auto;
             padding: 0 20px;
         }
@@ -33,6 +32,14 @@ b, h4, h3, h2, h1 {
 
 a, p, div {
     font-family: "nb", Georgia, 'Times New Roman', Times, serif;
+}
+
+#new_issue {
+    max-height: 82.5vh;
+    height: 82.5vh;
+    width: 100vw-15px;
+    background-image: url(img/Z8C_3704.JPG);
+    background-size: cover;
 }
 
 body {
@@ -321,7 +328,7 @@ div#slogan-flyer {
         /* Footer */
         .footer {
             background: #1a1a1a;
-            background-image: url(eArtboard\ 1@2x.png);
+            background-image: url(img/eArtboard\ 1@2x.png);
             background-position: 300px;
             background-repeat: no-repeat;
             color: #ccc;

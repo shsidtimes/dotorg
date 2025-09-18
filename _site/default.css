@@ -18,12 +18,11 @@
             padding: 0;
             box-sizing: border-box;
             text-decoration: none;
+
+            
             
         }
 
-        body {
-            overflow-x: hidden;
-        }
 
         main {
             max-width: 1200px;
@@ -50,7 +49,8 @@ a, p, div, i {
 body {
     width: 100vw-15px;
     height:initial;
-    border: #8B3535 7.5px solid;;
+    border: #8B3535 7.5px solid;
+    overflow-x: hidden;
 }
 
 div .top-bar {
@@ -461,6 +461,7 @@ nav li {
             } main img {
                 width: 100vw-30px;
                 overflow-x: hidden;
+            }
         }
 
         @media (max-width: 1000px) {
