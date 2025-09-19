@@ -8,7 +8,7 @@ layout: default
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, minimum-scale=1.0">
     <link rel="stylesheet" href="../../../../default.css">
-    <title>{{ page.title }}</title>
+    <title>{{ page.title }} - {{ page.tagline }} | SHSID|Times</title>
     <script src="https://kit.fontawesome.com/7308cf0505.js" crossorigin="anonymous"></script>
     <link rel="icon" type="image/x-icon" href="../../../../img/shsidtimes.ico">
     <meta property="og:url" content="https://shsidtimes.org">
@@ -23,16 +23,16 @@ layout: default
         <div class="container">
             <div class="top-bar">
                 <div class="logo" id="top-bar-logo">
-                    <a href="#"><img src="https://shsidtimes.org/img/eArtboard%201@2x.png" alt="" id="en_logo"></a>
-                    <a href="#"><img src="https://shsidtimes.org/img/ehArtboard%201@2x.png" alt="" id="cn_logo"></a>
+                    <a href="https://shsidtimes.org"><img src="https://shsidtimes.org/img/eArtboard%201@2x.png" alt="" id="en_logo"></a>
+                    <!-- <a href="https://shsidtimes.org"><img src="https://shsidtimes.org/img/ehArtboard%201@2x.png" alt="" id="cn_logo"></a> -->
                     
                 </div>
                 <div id="top-bar-links">
                         <div id="tbl-container">
                             <li><a href="#"><b>Latest Paper <br> 最新期刊</b></a></li>
-                            <li><a href="#"><p>Archives <br>时报档案</p></a></li>
-                            <li><a href="#"><p>About <br> 关于时报</p></a></li>
-                            <li><a href="#"><p>Masthead <br> 报编报头</p></a></li>
+                            <li><a href="#"><p>Archives <br>时刊档案</p></a></li>
+                            <li><a href="#"><p>About <br> 关于时刊</p></a></li>
+                            <li><a href="#"><p>Masthead <br> 刊编刊头</p></a></li>
                         </div>
                         
                     </div>
@@ -69,9 +69,6 @@ layout: default
         </div>
         <div id="slogan-flyer">
             <a href="about"><b>Persistent, Aspiring, Noble, Diligent, Achieving</b></a>
-            
-            <p>·</p>
-            <a href="recruiting"><p>2026 SHSID|Times Application</p></a>
         </div>
     </header>
     
@@ -99,6 +96,10 @@ layout: default
         </div>
         
         {{ content }}
+        <div style="color: grey; font-size: 14px; margin-top: 20px; font-family: 'nb';">
+            {{ page.note }}
+        </div>
+        
     </main>
 
     <footer class="footer">
@@ -109,10 +110,10 @@ layout: default
                     <a href="#">Our Past,  <br> Present, and Future</a>
                     <a href="#">Masthead</a>
                     <a href="#">Contact</a>
-                    <a href="#">Archives</a>
+                    <a href="https://www.shsid.org/AT_SHSID/SHSID___TIMES.htm" target="_blank">Archives</a>
                 </div>
                 <div class="footer-section">
-                    <h4>Latest Paper <br> <p>March-April 2025</p></h4>
+                    <h4>Latest Paper <br> <p>Summer 2025</p></h4>
                     
                     <a href="#">Articles</a>
                     <a href="#">Art and Photography</a>
@@ -122,23 +123,22 @@ layout: default
                 <div class="footer-section">
                     <h4>Connect</h4>
                     <a href="#">Finding Copies <br> on Campus</a>
-                    <a href="#">Writing for <br> the Times<a>
+                    <a href="https://mp.weixin.qq.com/s/rllB_CzT9nnbMaLNavjkoA" target="_blank">Writing for <br> the Times<a>
                     <a href="#">Submitting <br> Front Materials</a>
                     <a href="#">Send a Letter <br> to the Editor</a>
                 </div>
                 <div class="footer-section">
-                    <h4>SHSID|Times is the official High School student-run publication of <a href="#" id="shsid"><span>Shanghai High School International Division.</span></a></h4>
-                    <a href="#">About SHSID</a>
-                    <a href="#">Applying to SHSID<a>
-                    <a href="#">Life at SHSID</a>
-                    <a href="#">G1-12 News Feed</a>
+                    <h4>SHSID|Times is the official High School student-run publication of <a href="https://www.shsid.org/" target="_blank" id="shsid"><span>Shanghai High School International Division.</span></a></h4>
+                    <a href="https://www.shsid.org/DOCUMENTS/School_Profile.htm" target="_blank">About SHSID</a>
+                    <a href="https://www.shsid.org/ADMISSIONS/General_Information.htm" target="_blank">Applying to SHSID<a>
+                    <a href="https://www.shsid.org/AT_SHSID.htm" target="_blank">Life at SHSID</a>
+                    <a href="https://www.shsid.org/index/LATEST_NEWS.htm" target="_blank">G1-12 News Feed</a>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025, The Supervisors and Editors of The SHSID|Times. </p>
                 
             </div>
-            <img src="https://shsidtimes.org/img/ehArtboard%201@2x.png" alt="" id="footer_image">
         </div>
     </footer>
 </body>

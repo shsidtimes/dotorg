@@ -13,6 +13,16 @@
     src: url(../img/test-national-2-extrabold.woff2);
 }
 
+@font-face {
+    font-family: source-hans;
+    src: url(../img/SourceHanSerifCN-Heavy.otf);
+}
+
+
+.zh-cn {
+    font-family: 'source-hans', serif;
+}
+
 * {
             margin: 0;
             padding: 0;
@@ -27,11 +37,11 @@
         }
 
 b, h4, h3, h2, h1 {
-    font-family: "n2blk", Georgia, 'Times New Roman', Times, serif;
+    font-family: "n2blk", 'source-hans', Georgia, 'Times New Roman', Times, serif;
 }
 
 a, p, div {
-    font-family: "nb", Georgia, 'Times New Roman', Times, serif;
+    font-family: "nb", 'source-hans', Georgia, 'Times New Roman', Times, serif;
 }
 
 #new_issue {
@@ -178,6 +188,10 @@ div#slogan-flyer {
     text-decoration: none!important;
     color: #FFF;
 
+}
+
+#new_issue_link {
+    position: sticky;
 }
 
 

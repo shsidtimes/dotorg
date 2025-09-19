@@ -448,7 +448,7 @@ nav li {
     display: inline;
     animation: none;
     opacity: 1;
-    text-decoration:underline 2px yellow;
+    text-decoration:underline 2px yellow!important;
 }
 
         /* Responsive */
