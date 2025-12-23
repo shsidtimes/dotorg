@@ -19,6 +19,12 @@
 }
 
 
+@font-face {
+    font-family: grand-casino;
+    src: url("../img/Grand Casino Demo.otf");
+}
+
+
 .zh-cn {
     font-family: 'source-hans', serif;
 }
@@ -48,8 +54,9 @@ a, p, div {
     max-height: 82.5vh;
     height: 82.5vh;
     width: 100vw-15px;
-    background-image: url(img/Z8C_3704.JPG);
+    background-image: url(img/IMG_8615.jpg);
     background-size: cover;
+    background-position: center;
 }
 
 body {
