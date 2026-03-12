@@ -54,7 +54,7 @@ a, p, div {
     max-height: 82.5vh;
     height: 82.5vh;
     width: 100vw-15px;
-    background-image: url(img/w26.jpg);
+    background-image: url("https://github.com/shsidtimes/dotorg/blob/a8beb662fbecf557f2edc431153e6d6c6c8abbb8/img/w26.JPG");
     background-size: cover;
     background-position: center;
 }
