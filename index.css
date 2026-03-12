@@ -54,7 +54,7 @@ a, p, div {
     max-height: 82.5vh;
     height: 82.5vh;
     width: 100vw-15px;
-    background-image: url(img/w26.jpg);
+    background-image: url("img/w26.jpg");
     background-size: cover;
     background-position: center;
 }
