@@ -1,21 +1,21 @@
 @font-face {
     font-family: nb;
-    src: url(../img/test-newzald-book.woff2);
+    src: url(img/test-newzald-book.woff2);
 }
 
 @font-face {
     font-family: nblk;
-    src: url(../img/test-newzald-black.woff2);
+    src: url(img/test-newzald-black.woff2);
 }
 
 @font-face {
     font-family: n2blk;
-    src: url(../img/test-national-2-extrabold.woff2);
+    src: url(img/test-national-2-extrabold.woff2);
 }
 
 @font-face {
     font-family: source-hans;
-    src: url(../img/SourceHanSerifCN-Heavy.otf);
+    src: url(img/SourceHanSerifCN-Heavy.otf);
 }
 
 
@@ -54,7 +54,7 @@ a, p, div {
     max-height: 82.5vh;
     height: 82.5vh;
     width: 100vw-15px;
-    background-image: url(img/IMG_8615.jpg);
+    background-image: url(img/w26.jpg);
     background-size: cover;
     background-position: center;
 }
